@@ -2,7 +2,7 @@ import React from 'react';
 
 class SearchBar extends React.Component {
     state = { term: '' };
-
+    //arrow function binds the .this to SearchBar and prevents undefined error
     onFormSubmit = event => {
         event.preventDefault();
 
@@ -17,6 +17,7 @@ class SearchBar extends React.Component {
                         <label>Image Search</label>
                         <input
                             type="text"
+                            //We make the element controlled by passing the value through state
                             value={this.state.term}
                             onChange={e =>
                                 this.setState({ term: e.target.value })
