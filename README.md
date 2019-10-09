@@ -1,1 +1,1 @@
-Simple React project. Picture serach engine.
+Simple React project. Picture search engine.
